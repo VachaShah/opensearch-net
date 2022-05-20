@@ -421,13 +421,6 @@ namespace Osc
 		[IgnoreDataMember]
 		IndexName ICreateIndexRequest.Index => Self.RouteValues.Get<IndexName>("index");
 		// Request parameters
-		///<summary>Whether a type should be expected in the body of the mappings.</summary>
-		public bool? IncludeTypeName
-		{
-			get => Q<bool? >("include_type_name");
-			set => Q("include_type_name", value);
-		}
-
 		///<summary>Specify timeout for connection to master</summary>
 		public Time MasterTimeout
 		{
@@ -1112,13 +1105,6 @@ namespace Osc
 			set => Q("include_defaults", value);
 		}
 
-		///<summary>Whether to add the type name to the response (default: false)</summary>
-		public bool? IncludeTypeName
-		{
-			get => Q<bool? >("include_type_name");
-			set => Q("include_type_name", value);
-		}
-
 		///<summary>Return local information, do not retrieve the state from master node (default: false)</summary>
 		public bool? Local
 		{
@@ -1294,13 +1280,6 @@ namespace Osc
 			set => Q("include_defaults", value);
 		}
 
-		///<summary>Whether a type should be returned in the body of the mappings.</summary>
-		public bool? IncludeTypeName
-		{
-			get => Q<bool? >("include_type_name");
-			set => Q("include_type_name", value);
-		}
-
 		///<summary>Return local information, do not retrieve the state from master node (default: false)</summary>
 		public bool? Local
 		{
@@ -1361,13 +1340,6 @@ namespace Osc
 		{
 			get => Q<bool? >("ignore_unavailable");
 			set => Q("ignore_unavailable", value);
-		}
-
-		///<summary>Whether to add the type name to the response (default: false)</summary>
-		public bool? IncludeTypeName
-		{
-			get => Q<bool? >("include_type_name");
-			set => Q("include_type_name", value);
 		}
 
 		///<summary>Specify timeout for connection to master</summary>
@@ -1517,13 +1489,6 @@ namespace Osc
 		{
 			get => Q<bool? >("flat_settings");
 			set => Q("flat_settings", value);
-		}
-
-		///<summary>Whether a type should be returned in the body of the mappings.</summary>
-		public bool? IncludeTypeName
-		{
-			get => Q<bool? >("include_type_name");
-			set => Q("include_type_name", value);
 		}
 
 		///<summary>Return local information, do not retrieve the state from master node (default: false)</summary>
@@ -1732,13 +1697,6 @@ namespace Osc
 			set => Q("ignore_unavailable", value);
 		}
 
-		///<summary>Whether a type should be expected in the body of the mappings.</summary>
-		public bool? IncludeTypeName
-		{
-			get => Q<bool? >("include_type_name");
-			set => Q("include_type_name", value);
-		}
-
 		///<summary>Specify timeout for connection to master</summary>
 		public Time MasterTimeout
 		{
@@ -1897,13 +1855,6 @@ namespace Osc
 			set => Q("create", value);
 		}
 
-		///<summary>Whether a type should be returned in the body of the mappings.</summary>
-		public bool? IncludeTypeName
-		{
-			get => Q<bool? >("include_type_name");
-			set => Q("include_type_name", value);
-		}
-
 		///<summary>Specify timeout for connection to master</summary>
 		public Time MasterTimeout
 		{
@@ -2058,13 +2009,6 @@ namespace Osc
 		{
 			get => Q<bool? >("dry_run");
 			set => Q("dry_run", value);
-		}
-
-		///<summary>Whether a type should be included in the body of the mappings.</summary>
-		public bool? IncludeTypeName
-		{
-			get => Q<bool? >("include_type_name");
-			set => Q("include_type_name", value);
 		}
 
 		///<summary>Specify timeout for connection to master</summary>
